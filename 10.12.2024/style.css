@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+body{
+    background-image: url('bg.jpg');
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.zyczenia{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tekst{
+    /* border: 1px solid #000; */
+    padding: 40px 100px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.336);
+    backdrop-filter: blur(5px);
+    animation: rotating 2s infinite;
+}
+
+.tekst p i{
+    text-align: end;
+}
+@keyframes rotating {
+    0%{
+        padding: 40px 100px;
+        border-radius: 20px;
+    }
+    50%{
+        padding: 50px 150px;
+        border-radius: 4px;
+    }
+    100%{
+        padding: 40px 100px;
+        border-radius: 20px;
+    }
+}
+
+.zyczenia .tekst h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.zyczenia .tekst p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
