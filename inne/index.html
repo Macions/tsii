@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grafika</title>
+</head>
+<body>
+    <img src="giewont.jpg" alt="Giewont">
+    <img src="giewont.jpg" alt="Giewont" width="200" height="200">
+
+    <hr>
+
+    <img src="kwadrat.jpg" alt="4kwadraty" usemap="#kw" width="200px" height="200px">
+
+    <map name="kw">
+        <area shape="rect" coords="0,0,100,100" href="1.htm" alt="górny lewy">
+        <area shape="rect" coords="0,100,100,200" href="2.htm" alt="dolny lewy">
+        <area shape="rect" coords="100,0,200,100" href="3.htm" alt="górny prawy">
+        <area shape="rect" coords="100,100,200,200" href="4.htm" alt="dolny prawy">
+    </map>
+
+
+    <hr>
+
+
+    <svg width="200" height="200">
+        <rect x="40" y="40" stroke="black" width="150" height="150" fill="red">
+        </svg> 
+
+
+        <hr>
+
+
+        <svg width="200" height="200">
+        <circle cx="100" cy="100" r="50" stroke="red" fill="silved" stroke-width="4">
+        </svg>
+
+
+
+        <hr>
+
+
+
+        <svg height="500px" width="500px">
+            <polyline points="40, 180, 160, 60, 300, 180" stroke="black" />
+            <rect x="40" y="180" width="260px" height="150" stroke="black" fill="#cccccc" />
+            <rect x="90" y="200" width="40px" height="40" stroke="black" fill="#cccccc" />
+            <rect x="210" y="200" width="40px" height="40" stroke="black" fill="#cccccc" />
+            <rect x="150" y="270" width="40px" height="60" stroke="black" fill="brown" />
+            <line x1="150" y1="300" x2="160" y2="300" stroke="black" width="3px" style="fill:none;" />
+            <line x1="160" y1="300" x2="160" y2="310" stroke="black" width="3px" />
+        </svg>
+
+        
+        <hr>
+
+
+        <canvas id="kontener" width="300" height="200" style="border: 2px solid #ff0000;"></canvas>
+
+        <hr>
+
+
+        <object data="animacja.swf" width="100px" height="50px"></object>
+
+
+        <hr>
+
+        <audio controls="controls"><source src="muza.wav" type="audio/wav"></audio>
+
+
+        <hr>
+
+
+        <video width="500" height="400" controls>
+            <source src="animacja.mp4" type="video/mp4">
+            <source src="animacja.mov" type="video/mov">
+        </video>
+
+
+
+        <hr>
+
+
+        <iframe src="https://www.youtube.com/embed/O5kHei3MHzM" width="420" height="345"></iframe>
+
+
+        
+</body>
+</html>
