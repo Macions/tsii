@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie 6</title>
+    <style>
+        form {
+            width: 600px;
+            height: 300px;
+        }
+
+        table {
+            width: 600px;
+            height: 300px;
+            background-color: #eeeeee;
+        }
+
+        img {
+            border: 3px solid #993399;
+            width: 90%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        button{
+            float: right;
+            text-align: end;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <tr>
+                <td>Podaj swoje imię:</td>
+                <td><input type="text" name="imie"></td>
+                <td rowspan="5"><img src="/kwiat.jpg" alt="kwiatek"></td>
+            </tr>
+
+            <tr>
+                <td>Podaj swoje nazwisko:</td>
+                <td><input type="text" name="nazwisko"></td>
+            </tr>
+
+            <tr>
+                <td>Ile masz lat?</td>
+                <td><input type="number" name="old" id="old" min="1"></td>
+            </tr>
+
+            <tr>
+                <td>Wybierz płeć</td>
+                <td>
+                    <input type="radio" name="gender" value="mężczyzna">Mężczyzna
+                    <input type="radio" name="gender" value="kobieta">Kobieta
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jakiej muzyki słuchasz?</td>
+                <td>
+
+                    <input type="checkbox" name="type_of_music" value="heavy_metal">Heavy Metal <br>
+                    <input type="checkbox" name="type_of_music" value="rock">Rock <br>
+                    <input type="checkbox" name="type_of_music" value="pop">Pop <br>
+                    <input type="checkbox" name="type_of_music" value="techno">Techno <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                    <button type="submit" >Wyślij</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
