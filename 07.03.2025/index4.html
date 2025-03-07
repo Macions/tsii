@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Style dla body */
+
+        body {
+            color: red;
+        }
+
+        /* Style dla bratów  */
+
+        div~p {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Ten tekst jest czerwony, ponieważ dziedziczy kolor z elementu rodzica, czyli "body", oraz nie jest elementem
+        "p", który byłby jednym z elementów braci elementu "div".
+    </div>
+
+    <div>
+        <p>
+            Ten tekst znajdujący się w zawartości tego elementu "p" nie jest koloru niebieskiego, ponieważ nie jest
+            bratem, tylko dzieckiem elementu "div". Dziedziczy natomiast kolor czerwony od elementu nadrzędnego, jakim
+            jest "body".
+        </p>
+    </div>
+
+    <p>
+        Ten tekst jest koloru niebieskiego, ponieważ ten element "p" jest bratem elementu "div", a jego formatowanie
+        jest nadrzędne w stosunku do formatowania elementu "body".
+    </p>
+</body>
+
+</html>
